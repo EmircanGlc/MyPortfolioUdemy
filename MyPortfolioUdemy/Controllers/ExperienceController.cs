@@ -9,7 +9,6 @@ namespace MyPortfolioUdemy.Controllers
 		MyPortfolioContext context = new MyPortfolioContext();
 		public IActionResult ExperienceList()
         {
-            
             var values = context.Experiences.ToList(); 
             return View(values);
         }
