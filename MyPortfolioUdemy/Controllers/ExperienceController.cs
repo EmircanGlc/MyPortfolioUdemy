@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using MyPortfolioUdemy.DAL.Context;
 using MyPortfolioUdemy.DAL.Entities;
 
@@ -9,7 +10,7 @@ namespace MyPortfolioUdemy.Controllers
 		MyPortfolioContext context = new MyPortfolioContext();
 		public IActionResult ExperienceList()
         {
-            var values = context.Experiences.ToList(); 
+            var values = context.Experiences.ToList();
             return View(values);
         }
         //Yeni deneyim girişi yapmak için burayı kullanacağız.

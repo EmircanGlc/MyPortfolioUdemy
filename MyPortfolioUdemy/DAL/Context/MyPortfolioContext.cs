@@ -7,7 +7,7 @@ namespace MyPortfolioUdemy.DAL.Context
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server = ALFA_3250_AIO\\SQLEXPRESS; initial Catalog = MyPortfolioDb; integrated security = true; ");
+            optionsBuilder.UseSqlServer("Server =ALFA_3250_AIO\\SQLEXPRESS; Initial Catalog = MyPortfolioDb; integrated security = true; ");
         }
         public DbSet<About> Abouts { get; set; }
         public DbSet<Contact> Contacts { get; set; }
@@ -18,5 +18,6 @@ namespace MyPortfolioUdemy.DAL.Context
         public DbSet<Skill> Skills { get; set; }
         public DbSet<SocialMedia> SocialMedias { get; set; }
         public DbSet<Testimonial> Testimonials { get; set; }
+        public DbSet<ToDoList> ToDoLists { get; set; }
     }
 }

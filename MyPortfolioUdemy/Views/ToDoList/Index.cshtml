@@ -1,32 +1,30 @@
-﻿@model List<Experience>
-
+﻿@model List<ToDoList>
 @{
-    ViewData["Title"] = "ExperienceList";
+    ViewData["Title"] = "UpdateToDoList";
     Layout = "~/Views/Layout/Index.cshtml";
     int count = 0;
 }
 
-
 <div class="content">
     <div class="container-fluid">
-        <h4 class="page-title">Deneyimler</h4>
+        <h4 class="page-title">Yapılacaklar</h4>
         <div class="row">
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
-                        <div class="card-title">Deneyim Listesi</div>
+                        <div class="card-title">Yapılacaklar Listesi</div>
                     </div>
                     <div class="card-body">
                         <div class="card-sub">
-                            Deneyimler ile ilgili işlemleri aşağıdaki panelden yapabilirsiniz.
+                            Yapılacaklar ile ilgili işlemleri aşağıdaki panelden gerçekleştirebilirsiniz.
                         </div>
                         <table class="table mt-3">
                             <thead>
                                 <tr>
                                     <th scope="col">#</th>
-                                    <th scope="col">Başlık</th>
-                                    <th scope="col">Unvan</th>
+                                    <th scope="col">İçerik</th>
                                     <th scope="col">Tarih</th>
+                                    <th scope="col">Durum</th>
                                     <th scope="col">Sil</th>
                                     <th scope="col">Güncelle</th>
                                 </tr>
@@ -37,11 +35,19 @@
                                     count++;
                                     <tr>
                                         <td>@count</td>
-                                        <td>@item.Head</td>
                                         <td>@item.Title</td>
                                         <td>@item.Date</td>
-                                        <td><a href="/Experience/DeleteExperience/@item.ExperienceId" class="btn btn-danger">Sil</a></td>
-                                        <td><a href="/Experience/UpdateExperience/@item.ExperienceId" class="btn btn-success">Güncelle</a></td>
+                                        @if (item.Status == true)
+                                        {
+                                            <td><a href="/ToDoList/ChangeIsReadToFalse/@item.ToDoListId" class="btn btn-default">Yapılmadı Olarak İşaretle</a></td>
+                                        }
+                                        else
+                                        {
+                                            <td><a href="/ToDoList/ChangeIsReadToTrue/@item.ToDoListId" class="btn btn-primary">Yapıldı Olarak İşaretle</a></td>
+                                        }
+
+                                        <td><a href="/ToDoList/DeleteToDoList/@item.ToDoListId" class="btn btn-danger">Sil</a></td>
+                                        <td><a href="/ToDoList/UpdateToDoList/@item.ToDoListId" class="btn btn-success">Güncelle</a></td>
 
                                     </tr>
 
@@ -49,11 +55,12 @@
 
                             </tbody>
                         </table>
-                        <a href="/Experience/CreateExperience/" class="btn btn-primary">Deneyimi Ekle</a>
+                        <a href="/ToDoList/CreateToDoList/" class="btn btn-primary">Yapılacak İşlem Ekle</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 

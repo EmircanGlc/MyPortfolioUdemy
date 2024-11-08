@@ -8,7 +8,7 @@ namespace MyPortfolioUdemy.Controllers
 		MyPortfolioContext context = new MyPortfolioContext();
 		public IActionResult Inbox()
 		{
-			var values = context. Messages.ToList();
+			var values = context.Messages.ToList();
 			return View(values);
 		}
 		public IActionResult ChangeIsReadToTrue(int id)
