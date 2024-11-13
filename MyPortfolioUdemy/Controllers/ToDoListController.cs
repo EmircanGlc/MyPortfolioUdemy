@@ -20,6 +20,7 @@ namespace MyPortfolioUdemy.Controllers
 		[HttpPost]
 		public IActionResult CreateToDoList(ToDoList toDoList)
 		{
+			toDoList.Status = false;
 			context.ToDoLists.Add(toDoList);
 			context.SaveChanges();
 			return RedirectToAction("Index");
@@ -35,14 +36,27 @@ namespace MyPortfolioUdemy.Controllers
 		public IActionResult UpdateToDoList(int id)
 		{
 			var value = context.ToDoLists.Find(id);
-			context.ToDoLists.Update(value);
-			return RedirectToAction("Index");	
+			return RedirectToAction("Index");
 		}
 		[HttpPost]
 		public IActionResult UpdateToDoList(ToDoList toDoList)
 		{
 			context.ToDoLists.Update(toDoList);
 			context.SaveChanges();	
+			return RedirectToAction("Index");
+		}
+		public IActionResult ChangeToDoListStatusToTrue(int id)
+		{
+			var value = context.ToDoLists.Find(id);
+			value.Status = true;
+			context.SaveChanges();
+			return RedirectToAction("Index");
+		}
+		public IActionResult ChangeToDoListStatusToFalse(int id)
+		{
+			var value = context.ToDoLists.Find(id);
+			value.Status = false;
+			context.SaveChanges();
 			return RedirectToAction("Index");
 		}
 	}

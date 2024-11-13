@@ -1,6 +1,6 @@
 ﻿@model List<ToDoList>
 @{
-    ViewData["Title"] = "UpdateToDoList";
+    ViewData["Title"] = "Index";
     Layout = "~/Views/Layout/Index.cshtml";
     int count = 0;
 }
@@ -39,11 +39,11 @@
                                         <td>@item.Date</td>
                                         @if (item.Status == true)
                                         {
-                                            <td><a href="/ToDoList/ChangeIsReadToFalse/@item.ToDoListId" class="btn btn-default">Yapılmadı Olarak İşaretle</a></td>
+                                            <td><a href="/ToDoList/ChangeToDoListStatusToFalse/@item.ToDoListId" class="btn btn-default">Yapılmadı Olarak İşaretle</a></td>
                                         }
                                         else
                                         {
-                                            <td><a href="/ToDoList/ChangeIsReadToTrue/@item.ToDoListId" class="btn btn-primary">Yapıldı Olarak İşaretle</a></td>
+                                            <td><a href="/ToDoList/ChangeToDoListStatusToTrue/@item.ToDoListId" class="btn btn-primary">Yapıldı Olarak İşaretle</a></td>
                                         }
 
                                         <td><a href="/ToDoList/DeleteToDoList/@item.ToDoListId" class="btn btn-danger">Sil</a></td>
@@ -55,7 +55,7 @@
 
                             </tbody>
                         </table>
-                        <a href="/ToDoList/CreateToDoList/" class="btn btn-primary">Yapılacak İşlem Ekle</a>
+                        <a href="/ToDoList/CreateToDoList/" class="btn btn-primary">Yeni Yapılacak İşlem Girişi</a>
                     </div>
                 </div>
             </div>
