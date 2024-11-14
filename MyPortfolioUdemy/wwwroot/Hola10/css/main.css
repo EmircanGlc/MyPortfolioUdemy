@@ -2388,9 +2388,14 @@ html.no-csstransitions .home-content__main {
 .item-folio {
     position: relative;
     overflow: hidden;
+    width: 350px; /* Konteyner geniþliði */
+    height: 200px;
 }
 
 .item-folio__thumb img {
+    width: 100%; /* Konteynýrýn tamamýný kaplayacak */
+    height: 100%; /* Konteynýrýn yüksekliðine uyacak */
+    object-fit: cover; /* Görselin konteynýrý doldurmasýný saðlar */
     vertical-align: top;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
@@ -2490,7 +2495,7 @@ html.no-csstransitions .home-content__main {
     height: 4.2rem;
     width: 4.2rem;
     text-align: center;
-    z-index: 500;
+    z-index: 2;
     position: absolute;
     top: 3rem;
     left: 3rem;
@@ -2550,6 +2555,7 @@ html.no-csstransitions .home-content__main {
     -webkit-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+    
 }
 
 
