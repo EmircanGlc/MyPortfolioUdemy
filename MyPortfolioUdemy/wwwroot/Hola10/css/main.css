@@ -345,7 +345,7 @@ ol {
 }
 
 ul {
-    list-style: disc;
+    list-style-type: disc;
 }
 
 li {
@@ -354,11 +354,15 @@ li {
 
 ol, ul {
     margin-left: 1.7rem;
+    
 }
 
-ul li {
-    padding-left: .4rem;
-}
+    ul li {
+        padding-left: .4rem;
+        font-size: 18px;
+        font-weight: bolder;
+        margin: 20px 0;
+    }
 
 ul ul, ul ol, ol ol, ol ul {
     margin: .6rem 0 .6rem 1.7rem;
@@ -1102,8 +1106,31 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 /* ------------------------------------------------------------------- 
  * ## skillbars - (_skillbars.scss)
  * ------------------------------------------------------------------- */
+.skills-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    font-size: 18px;
+}
 
-.skill-bars {
+    .skills-table th,
+    .skills-table td {
+        padding: 20px;
+        text-align: left;
+        border: 1px solid #ddd;
+        font-weight: bold; /* Yazýyý kalýn yapýyoruz */
+    }
+
+    .skills-table th {
+        background-color: #f4f4f4;
+        color: #333;
+    }
+
+    .skills-table tr:nth-child(even) {
+        background-color: #d7d6d6; /* Alternatif satýr rengi */
+    }
+
+.skill-bar {
     list-style: none;
     margin: 6rem 0 3rem;
 }
