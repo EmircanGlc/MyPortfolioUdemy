@@ -47,6 +47,30 @@ namespace MyPortfolioUdemy.Migrations
                     b.ToTable("Abouts");
                 });
 
+            modelBuilder.Entity("MyPortfolioUdemy.DAL.Entities.Certificate", b =>
+                {
+                    b.Property<int>("CertificateId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CertificateId"), 1L, 1);
+
+                    b.Property<string>("CertificateName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Organisation")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("ReceivedDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("CertificateId");
+
+                    b.ToTable("Certificates");
+                });
+
             modelBuilder.Entity("MyPortfolioUdemy.DAL.Entities.Contact", b =>
                 {
                     b.Property<int>("ContactId")
