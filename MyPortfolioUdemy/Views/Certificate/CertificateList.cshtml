@@ -1,0 +1,57 @@
+﻿@model List<Certificate>
+@{
+    ViewData["Title"] = "CertificateList";
+    Layout = "~/Views/Layout/Index.cshtml";
+    int count = 0;
+}
+
+<div class="content">
+    <div class="container-fluid">
+        <h4 class="page-title">Sertifikalarım</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Sertifikalar</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-sub">
+                            Sertifikalar ile ilgili işlemleri aşağıdaki panelden yapabilirsiniz.
+                        </div>
+                        <table class="table mt-3">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Sertifika Adı</th>
+                                    <th scope="col">Alınan Kurum</th>
+                                    <th scope="col">Alınan Tarih</th>
+                                    <th scope="col">Sil</th>
+                                    <th scope="col">Güncelle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    count++;
+                                    <tr>
+                                        <td>@count</td>
+                                        <td>@item.CertificateName</td>
+                                        <td>@item.Organisation</td>
+                                        <td>@item.ReceivedDate</td>
+                                        <td><a href="/Certificate/DeleteCertificate/@item.CertificateId" class="btn btn-danger">Sil</a></td>
+                                        <td><a href="/Certificate/UpdateCertificate/@item.CertificateId" class="btn btn-success">Güncelle</a></td>
+
+                                    </tr>
+
+                                }
+
+                            </tbody>
+                        </table>
+                        <a href="/Certificate/CreateCertificate/" class="btn btn-primary">Sertifika Ekle</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

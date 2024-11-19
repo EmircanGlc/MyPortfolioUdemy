@@ -7,5 +7,6 @@
         public string Organisation { get; set; } //Alınan Kurum
         public DateTime ReceivedDate { get; set; } //sertifika tarihi
         
+
     }
 }

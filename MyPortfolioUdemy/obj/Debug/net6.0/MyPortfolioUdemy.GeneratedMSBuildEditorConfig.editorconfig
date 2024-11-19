@@ -20,6 +20,14 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/user/OneDrive/Masaüstü/Portfolio/MyPortfolioUdemy/MyPortfolioUdemy/Views/Certificate/CertificateList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VydGlmaWNhdGVcQ2VydGlmaWNhdGVMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/OneDrive/Masaüstü/Portfolio/MyPortfolioUdemy/MyPortfolioUdemy/Views/Certificate/CreateCertificate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VydGlmaWNhdGVcQ3JlYXRlQ2VydGlmaWNhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/user/OneDrive/Masaüstü/Portfolio/MyPortfolioUdemy/MyPortfolioUdemy/Views/Default/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmYXVsdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -122,10 +130,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/user/OneDrive/Masaüstü/Portfolio/MyPortfolioUdemy/MyPortfolioUdemy/Views/Skill/SkillList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2tpbGxcU2tpbGxMaXN0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/user/OneDrive/Masaüstü/Portfolio/MyPortfolioUdemy/MyPortfolioUdemy/Views/Statistic/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdGlzdGljXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/user/OneDrive/Masaüstü/Portfolio/MyPortfolioUdemy/MyPortfolioUdemy/Views/ToDoList/CreateToDoList.cshtml]

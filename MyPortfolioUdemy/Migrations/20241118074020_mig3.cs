@@ -17,7 +17,8 @@ namespace MyPortfolioUdemy.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     CertificateName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Organisation = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ReceivedDate = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    ReceivedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                   
                 },
                 constraints: table =>
                 {
