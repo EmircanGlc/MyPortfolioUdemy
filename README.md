@@ -1,4 +1,4 @@
-:raising_hand: Merhaba ,
+ :raising_hand: Merhaba ,
  Kendi Portfoyümü oluşturdum ve sizlerle paylaşmak istedim. 
  Bu proje Sayın "Murat Yücedağ" hocamızın "Asp.Net Core ile Portfolyo Uygulamanızı Geliştirin" isimli Udemy kursu kapsamında geliştirildi. 
  Sonradan kalan kısımları ve eklemek istediğim kısımları ise kendim düzenledim.Sayın "Murat Yücedağ" hocamıza değerli bilgileri için teşekkür ederim.
