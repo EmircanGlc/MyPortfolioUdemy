@@ -12,7 +12,7 @@ Sonradan kalan kısımları ve eklemek istediğim kısımları ise kendim düzen
 - Bootstrap kullanılarak şık ve dinamik bir portfolyo sitesi oluşturuldu.
 
 Proje Kapsamında Kullanılan Teknolojiler
--:relaxed:C#
+- :relaxed: C#
 -Asp.Net Core
 -Html,Css,Javascrıpt
 -LINQ
