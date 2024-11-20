@@ -13,7 +13,7 @@ Sonradan kalan kısımları ve eklemek istediğim kısımları ise kendim düzen
 
 Proje Kapsamında Kullanılan Teknolojiler
 - :relaxed: C#
--Asp.Net Core
+- Asp.Net Core
 -Html,Css,Javascrıpt
 -LINQ
 -Entity Framework
