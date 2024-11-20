@@ -19,5 +19,7 @@ Proje Kapsamında Kullanılan Teknolojiler
 - :star2: Entity Framework
 - :alien: Sql
 
+Neler Yaptım?
+
 
  
