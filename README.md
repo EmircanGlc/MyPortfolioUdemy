@@ -29,7 +29,8 @@ Proje Kapsamında Kullanılan Teknolojiler
 - Admin sayfası üzerinden ekleme, silme, güncelleme işlemleri gerçekleştirilebilir hale getirildi.
 - Controllerda oluşturulan metotlar üzerinden viewlerde ekleme,silme, güncelleme işlemleri çalıştırıldı.
 - Entity Framework kullanılarak veritabanından veri çekildi.
-- Migration kullanılarak veritabanı güncelleme ve ekleme işlemleri gerçekleştirildi.
+- LINQ sorguları kullanıldı.
+- Web sitesi üzerindeki iconlara tıklandığında Sosyal medya hesaplarına ve Cv'me ulaşılabilir hale getirildi.
 
 # :umbrella: PROJEDEN GÖRSELLER
 
